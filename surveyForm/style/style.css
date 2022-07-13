@@ -1,2 +1,160 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+}
+
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+    --font-main: 'Poppins', sans-serif;
+    
+
+}
+
+body {
+    color: var(--color-white);
+    background: darkblue;
+    background-image: linear-gradient(115deg, #202024cc, #474752b3), url(../image/background-opc.jpg);
+    /* background-image: linear-gradient(115deg, #3a3a9ecc, #8888ceb3), url(../image/background-opc.jpg); */
+    min-height: 100vh;
+    display: block;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header {
+    margin-top: 5vh;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-weight: 600;
+}
+
+#header_sub {
+    font-weight: 400;
+    
+}
+
+#header_note {
+    font-weight: 200;
+    font-style: italic;
+}
+
+main {
+    margin: auto;
+    background-color: #202024d8;
+    width: 545px;
+    padding: 45px 35px;
+    line-height: 2;
+}
+
+fieldset {
+    border: none;
+}
+
+.formGroup {
+    margin: 20px;
+}
+
+#persDetails {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.inputBox, #user_about{
+    display: block;
+    width: 500px;
+    padding: 6px;
+    border-radius: 4px;
+    border-color: var(--color-white);
+    resize: none;
+}
+
+.dropdown {
+    display: block;
+    width: 200px;
+    padding: 6px;
+    border-radius: 4px;
+    border-color: var(--color-white);
+    cursor: pointer;    
+}
+
+.input_radio {
+    margin-right: 0.625rem;
+    min-height: 1.1rem;
+    min-width: 1.1rem;
+    vertical-align: middle;
+}
+
+#outingDate {
+    display: block;
+    width: 200px;
+    padding: 6px;
+    border-radius: 4px;
+    border-color: var(--color-white);
+    cursor: pointer;
+}
+
+.inputTitle {
+    font-size: 1.2rem;
+}
+
+.dropdown_head {
+    margin-bottom: 20px;
+}
+
+.clue {
+    font-weight: 200;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.checkBox {
+    margin-right: 12px;
+}
+
+#textInputHead {
+    font-size: 1rem;
+}
+
+#certificatesHeader {
+    margin-top: 30px;
+}
+
+.fileLabel {
+    width: 145px;
+    display: inline-block;
+    line-height: 2.2rem;
+}
+
+#sendAppButton {
+    width: 500px;
+    height: 2.8rem;
+    margin-top: 30px;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sendAppButton:hover {
+    background-color: #3dc06f;
+}
+
+.sendButton {
+    cursor: pointer;
+}
+
+
 

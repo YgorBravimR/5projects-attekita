@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
-
 </head>
 <body>
 <header>
@@ -19,31 +18,31 @@
     <form action="#" id="surveyForm" method="post">
         <div>
             <fieldset>
-            <legend>Personal Details</legend>
+            <legend id="persDetails">Personal Details</legend>
                 <div>
-                    <div class="formGroup">
-                        <label for="name">Name</label>
+                    <div class="formGroup" >
+                        <label for="name" class="inputTitle">Name</label>
                         <input type="text" class="inputBox" id="name" name="user_name" placeholder="Enter full name here" required >
                     </div>
-                    <div class="formGroup">
-                        <label for="address">Address</label>
+                    <div class="formGroup" >
+                        <label for="address" class="inputTitle">Address</label>
                         <input type="address" class="inputBox" id="address" name="user_address" placeholder="Enter your address here" required >
                     </div>
-                    <div class="formGroup">
-                        <label for="email">E-mail</label>
+                    <div class="formGroup" >
+                        <label for="email" class="inputTitle">E-mail</label>
                         <input type="email" class="inputBox" id="email" name="user_email" placeholder="Enter email here" required >
                     </div>
-                    <div class="formGroup">
-                        <label for="phoneNumber">Phone Number</label>
+                    <div class="formGroup" >
+                        <label for="phoneNumber" class="inputTitle">Phone Number</label>
                         <input type="tel" class="inputBox" id="phoneNumber" name="user_phone" placeholder="(xx) Xxxxx-xxxx" required >
                     </div>
                     <div class="formGroup">
-                        <label for="intQuoti">IQ</label>
-                        <input type="number" class="inputBox" id="IntQuoti" name="user_IQ" placeholder="Enter you IQ, you'll be tested" required >
+                        <label for="intQuoti" class="inputTitle">IQ</label>
+                        <input type="number" class="inputBox" id="IntQuoti" name="user_IQ" placeholder="Enter your IQ, you'll be tested" required >
                     </div>
                 </div>
                 <div class="formGroup">
-                    <p class="dropdown_head">Which option best describes your current role?</p>
+                    <p class="inputTitle">Which option best describes your current role?</p>
                     <select name="role" class="dropdown" id="role_dropdown">
                         <option disabled selected>Select one option</option>
                         <option value="fullTime">Full time job</option>
@@ -54,61 +53,61 @@
                     </select>
                 </div>
                 <div class="formGroup" id="formGender">
-                    <p class="radio_head">Gender</p>
-                    <div class="input_label">
+                    <p class="inputTitle">Gender</p>
+                    <div class="input_radio">
                         <label for="genderMale">
                             <input value="male" type="radio" class="input_radio" id="genderMale" name="gender" required checked>Male
                         </label>
                     </div>
-                    <div class="input_label">
+                    <div class="input_radio">
                         <label for="genderFemale">
                             <input value="female" type="radio" class="input_radio" id="genderFemale" name="gender" Required>Female
                         </label>
                     </div>
-                    <div class="input_label">
+                    <div class="input_radio">
                         <label for="genderOther">
                             <input value="other" type="radio" class="input_radio" id="genderOther" name="gender" required>Other
                         </label>
                     </div>
                 </div>
-                <div id="outDate">
-                    <label for="outingDate">Date of Proposed Outing</label>
-                    <input type="date" name="out_date" id="outingDate">
+                <div class="formGroup" id="outDate">
+                    <label for="outingDate" class="inputTitle">Date of Proposed Outing</label>
+                    <input type="datetime-local" name="out_date" id="outingDate">
                 </div>
             </fieldset>
         </div>
         <div class="formGroup" id="specificInfo">
             <fieldset>
-                <p>Mark what suit to your
+                <p class="inputTitle">Mark what suit to your
                     <span class="clue">(Check all that apply)</span>
                 </p>
                 <div>
                     <label for="tatto">
-                    <input type="checkbox" name="user_tatto" id="tatto">I have tattoos and/or piercings<br> </label>
+                    <input type="checkbox" name="user_tatto" id="tatto" class="checkBox">I have tattoos and/or piercings </label>
                 </div>
                 <div>
                     <label for="plusAge">
-                    <input type="checkbox" name="user_plusAge" id="plusAge">I am more than 2 years older than my daughter<br></label>
+                    <input type="checkbox" name="user_plusAge" id="plusAge" class="checkBox">I am more than 2 years older than my daughter</label>
                 </div>
                 <div>
                     <label for="drugs">
-                    <input type="checkbox" name="user_drugsUse" id="drugs">I avoid drugs (includes alcohol)<br></label>
+                    <input type="checkbox" name="user_drugsUse" id="drugs" class="checkBox">I avoid drugs (includes alcohol)</label>
                 </div>
                 <div>
                     <label for="richParents">
-                    <input type="checkbox" name="user_richParents" id="richParents">My parents are rich<br></label>
+                    <input type="checkbox" name="user_richParents" id="richParents" class="checkBox">My parents are rich</label>
                     <!-- Make it open a textbox to specify value -->
                 </div>             
                 <div>
                     <label for="publicLoc">
-                    <input type="checkbox" name="user_publicLoc" id="publicLoc">Is the date at a well lit public location<br></label>
+                    <input type="checkbox" name="user_publicLoc" id="publicLoc" class="checkBox">Is the date at a well lit public location</label>
                 </div>
             </fieldset>
         </div>
-        <div>
+        <div class="formGroup">
             <fieldset>
-                <div>
-                    <p class="dropdown_head">Religion</p>
+                <div class="dropdown_head">
+                    <p class="inputTitle">Religion</p>
                     <select name="religion" id="relegion_dropdown" class="dropdown">
                         <option value="#" disabled selected>Select one</option>
                         <option value="christ">Christian</option>
@@ -117,8 +116,8 @@
                         <option value="stopHere">Other</option>
                     </select>
                 </div>
-                <div>
-                    <p class="dropdown_head">Political persuasion</p>
+                <div class="dropdown_head">
+                    <p class="inputTitle">Political persuasion</p>
                     <select name="politic" id="politic_dropdown" class="dropdown">
                         <option value="#" disabled selected>Pickup a side</option>
                         <option value="bolso">Right Wing</option>
@@ -128,8 +127,8 @@
                         <option value="removeHim">Nazi</option>
                     </select>
                 </div>
-                <div>
-                    <p class="dropdown_head">Education level completed</p>
+                <div class="dropdown_head">
+                    <p class="inputTitle">Education level completed</p>
                     <select name="politic" id="politic_dropdown" class="dropdown">
                         <option value="" disabled selected>Don't Lie, I'll know</option>
                         <option value="university">University</option>
@@ -140,33 +139,31 @@
                 </div>
             </fieldset>
         </div>
-        <div>                
+        <div class="formGroup">                
             <fieldset>
-            <legend>Essay section</legend>
                 <div>
                     <label for="whyUwant"></label>
-                    <p>In, exactly, 121 caracters explain why you want to date my niece</p>
-                    <textarea name="whyUwant" id="user_about" cols="30" rows="10" wrap="soft" placeholder="Enter text here"></textarea>
-                    <!--           [CSS -> resize: none;]             -->
+                    <p class="inputTitle" id="textInputHead">In, exactly, 207 caracters explain why you want to date my niece</p>
+                    <textarea name="whyUwant" id="user_about" cols="76" rows="3" wrap="hard" placeholder="Enter text here" maxlength="207"></textarea>
                 </div>
                 <div>
-                    <p>Upload the certificates needed</p>
+                    <p class="inputTitle" id="certificatesHeader">Upload the certificates needed</p>
                     <div>
-                        <label for="medical">Medical</label>
-                        <input type="file" name="cert_med" id="medical">
+                        <label for="medical"><p class="fileLabel">Medical</p></label>
+                        <input type="file" name="cert_med" id="medical" class="sendButton">
                     </div>
                     <div>
-                        <label for="police">Police clearance</label>
-                        <input type="file" name="cert_pol" id="police">
+                        <label for="police"><p class="fileLabel">Police clearance</p></label>
+                        <input type="file" name="cert_pol" id="police" class="sendButton">
                     </div>
                     <div>
-                        <label for="bank">Bank statement</label>
-                        <input type="file" name="cert_bank" id="bank">
+                        <label for="bank"><p class="fileLabel">Bank statement</p></label>
+                        <input type="file" name="cert_bank" id="bank" class="sendButton">
                     </div>
                 </div>
             </fieldset>
             <footer>
-                <button class="send_button" type="submit"> Send your application</button>
+                <button class="sendButton" type="submit" id="sendAppButton" > Send your application</button>
             </footer>
         </div>            
     </form>
