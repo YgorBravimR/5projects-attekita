@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+<header>
+    <h1>Application to date my niece</h1>
+    <p id="header_sub">Before all, the answer is No! The staff will judge you after your form.</p>
+    <p id="header_note">Note: Form is to be completed at least 21 days prior to date</p>
+</header>
+<main>
+    <form action="#" id="surveyForm" method="post">
+        <div>
+            <fieldset>
+            <legend>Personal Details</legend>
+                <div>
+                    <div class="formGroup">
+                        <label for="name">Name</label>
+                        <input type="text" class="inputBox" id="name" name="user_name" placeholder="Enter full name here" required >
+                    </div>
+                    <div class="formGroup">
+                        <label for="address">Address</label>
+                        <input type="address" class="inputBox" id="address" name="user_address" placeholder="Enter your address here" required >
+                    </div>
+                    <div class="formGroup">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="inputBox" id="email" name="user_email" placeholder="Enter email here" required >
+                    </div>
+                    <div class="formGroup">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="tel" class="inputBox" id="phoneNumber" name="user_phone" placeholder="(xx) Xxxxx-xxxx" required >
+                    </div>
+                    <div class="formGroup">
+                        <label for="intQuoti">IQ</label>
+                        <input type="number" class="inputBox" id="IntQuoti" name="user_IQ" placeholder="Enter you IQ, you'll be tested" required >
+                    </div>
+                </div>
+                <div class="formGroup">
+                    <p class="dropdown_head">Which option best describes your current role?</p>
+                    <select name="role" class="dropdown" id="role_dropdown">
+                        <option disabled selected>Select one option</option>
+                        <option value="fullTime">Full time job</option>
+                        <option value="student">Student</option>
+                        <option value="partTime">Part time job</option>
+                        <option value="Unemp">Unemployed</option>
+                        <option value="Cut">Don't want to work</option>
+                    </select>
+                </div>
+                <div class="formGroup" id="formGender">
+                    <p class="radio_head">Gender</p>
+                    <div class="input_label">
+                        <label for="genderMale">
+                            <input value="male" type="radio" class="input_radio" id="genderMale" name="gender" required checked>Male
+                        </label>
+                    </div>
+                    <div class="input_label">
+                        <label for="genderFemale">
+                            <input value="female" type="radio" class="input_radio" id="genderFemale" name="gender" Required>Female
+                        </label>
+                    </div>
+                    <div class="input_label">
+                        <label for="genderOther">
+                            <input value="other" type="radio" class="input_radio" id="genderOther" name="gender" required>Other
+                        </label>
+                    </div>
+                </div>
+                <div id="outDate">
+                    <label for="outingDate">Date of Proposed Outing</label>
+                    <input type="date" name="out_date" id="outingDate">
+                </div>
+            </fieldset>
+        </div>
+        <div class="formGroup" id="specificInfo">
+            <fieldset>
+                <p>Mark what suit to your
+                    <span class="clue">(Check all that apply)</span>
+                </p>
+                <div>
+                    <label for="tatto">
+                    <input type="checkbox" name="user_tatto" id="tatto">I have tattoos and/or piercings<br> </label>
+                </div>
+                <div>
+                    <label for="plusAge">
+                    <input type="checkbox" name="user_plusAge" id="plusAge">I am more than 2 years older than my daughter<br></label>
+                </div>
+                <div>
+                    <label for="drugs">
+                    <input type="checkbox" name="user_drugsUse" id="drugs">I avoid drugs (includes alcohol)<br></label>
+                </div>
+                <div>
+                    <label for="richParents">
+                    <input type="checkbox" name="user_richParents" id="richParents">My parents are rich<br></label>
+                    <!-- Make it open a textbox to specify value -->
+                </div>             
+                <div>
+                    <label for="publicLoc">
+                    <input type="checkbox" name="user_publicLoc" id="publicLoc">Is the date at a well lit public location<br></label>
+                </div>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <div>
+                    <p class="dropdown_head">Religion</p>
+                    <select name="religion" id="relegion_dropdown" class="dropdown">
+                        <option value="#" disabled selected>Select one</option>
+                        <option value="christ">Christian</option>
+                        <option value="atheic">Atheist</option>
+                        <option value="unbelieve">Don't believe at all</option>
+                        <option value="stopHere">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="dropdown_head">Political persuasion</p>
+                    <select name="politic" id="politic_dropdown" class="dropdown">
+                        <option value="#" disabled selected>Pickup a side</option>
+                        <option value="bolso">Right Wing</option>
+                        <option value="lula">Left Wing</option>
+                        <option value="centrao">Conservative</option>
+                        <option value="mbl">Liberal</option>
+                        <option value="removeHim">Nazi</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="dropdown_head">Education level completed</p>
+                    <select name="politic" id="politic_dropdown" class="dropdown">
+                        <option value="" disabled selected>Don't Lie, I'll know</option>
+                        <option value="university">University</option>
+                        <option value="college">College</option>
+                        <option value="highSchool">High School</option>
+                        <option value="none">None</option>
+                    </select>
+                </div>
+            </fieldset>
+        </div>
+        <div>                
+            <fieldset>
+            <legend>Essay section</legend>
+                <div>
+                    <label for="whyUwant"></label>
+                    <p>In, exactly, 121 caracters explain why you want to date my niece</p>
+                    <textarea name="whyUwant" id="user_about" cols="30" rows="10" wrap="soft" placeholder="Enter text here"></textarea>
+                    <!--           [CSS -> resize: none;]             -->
+                </div>
+                <div>
+                    <p>Upload the certificates needed</p>
+                    <div>
+                        <label for="medical">Medical</label>
+                        <input type="file" name="cert_med" id="medical">
+                    </div>
+                    <div>
+                        <label for="police">Police clearance</label>
+                        <input type="file" name="cert_pol" id="police">
+                    </div>
+                    <div>
+                        <label for="bank">Bank statement</label>
+                        <input type="file" name="cert_bank" id="bank">
+                    </div>
+                </div>
+            </fieldset>
+            <footer>
+                <button class="send_button" type="submit"> Send your application</button>
+            </footer>
+        </div>            
+    </form>
+</main>
+</body>
+</html>
