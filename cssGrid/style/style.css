@@ -35,16 +35,19 @@ header {
     text-shadow: 1px 1px black;
 }
 
-header button {
+header .button {
+    display: inline-block;
     background-color: var(--colorBlack);
     color: var(--colorWhite);
     padding: 12px 28px;
     border: 1px solid var(--colorGray);
     font-size: 1.1em;
     margin-top: 20px;
+    text-decoration: none;
+
 }
 
-header button:hover {
+header .button:hover {
     background-color: white;
     color: var(--colorBlack);
     border: 1px solid var(--colorBlue);
@@ -59,14 +62,9 @@ header button:hover {
     padding: 1.5em;
 }
 
-
-/* SECTION A */
-
 #section-a p {
     padding: 1em 0px;
 }
-
-/* SECTION B */
 
 #section-b {
     background-color: var(--colorBlack);
@@ -147,15 +145,25 @@ footer a:hover {
 
 @media (min-width: 700px) {
 
+#section-a, #section-c{
+    display: block;
+    max-width: 880px;
+    margin: auto;
+}       
+
 #section-a p {
+    column-gap: 2em;
     columns: 2;
+}
+
+#section-b {
+    display: flex;  
 }
 
 #section-b ul {
     display: flex;
     justify-content: space-around;
     max-width: 880px;
-    align-content: center;
     margin: auto;
 }
 
@@ -163,14 +171,8 @@ footer a:hover {
     width: 31%;
 }
 
-.footer-box, #main-footer{
+.footer-box, #main-footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
-
-
-
-
-
 }
